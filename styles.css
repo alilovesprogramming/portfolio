@@ -1,0 +1,93 @@
+body{
+    background-color: #1b1b32;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+h1,
+.p{
+    margin: 1em auto;
+    text-align: center;
+}
+form{
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 100vh;
+}
+fieldset{
+    border: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: solid rgb(54, 54, 54);
+}
+fieldset:last-of-type{
+    border: none;
+}
+textarea,
+input,
+select{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #0a0a23;
+    border: solid #0a0a23;
+    color: whitesmoke;
+    min-height: 2em;
+}
+.inline{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+/* 
+
+To style the submit button, you can use an attribute selector, which selects an element based on the given attribute value. Here is an example:
+
+Example Code
+input[name="password"]
+
+*/
+input[type='submit']{
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: whitesmoke;
+    min-width: 300px;
+    padding-bottom: 2em;
+    padding-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+input[type='file']{
+    padding: 1px 2px;
+}
+#link {
+    color: whitesmoke;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#link:hover {
+    cursor: pointer;
+    background-color: #1b1b32;
+      
+}
+
+
+input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #0a0a23;
+    transform:scale(1.1);
+}
+
